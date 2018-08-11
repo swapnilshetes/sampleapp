@@ -10,9 +10,7 @@ node{
     stage('SonarQube analysis') {
      def mvnHome = tool name: 'maven-3', type: 'maven'
        withSonarQubeEnv('sonar-6') {
-         sh "${mvnHome}/bin/mvn sonar:sonar \
-  -Dsonar.host.url=http://localhost:9000 \
-  -Dsonar.login=a91334acbc296ae52012d52e66c516cf0e59a828"
+         sh "${mvnHome}/bin/mvn sonar:sonar"
        }
     }
     stage("Slack Notification")
