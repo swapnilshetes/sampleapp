@@ -38,5 +38,11 @@
 			<artifactId>jcommander</artifactId>
 			<version>1.72</version>
 		</dependency>
+		<dependency>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>sonar-maven-plugin</artifactId>
+                        <version>3.4.1.1168</version>
+                        <type>pom</type>
+               </dependency>	
 	</dependencies>
 </project>
