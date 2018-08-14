@@ -10,9 +10,10 @@ node{
     stage('SonarQube analysis') {
      def mvnHome = tool name: 'maven-3', type: 'maven'
        withSonarQubeEnv('sonar-6') {
-         sh "${mvnHome}/bin/mvn -P mvn sonar:sonar \
-  -Dsonar.host.url=http://localhost:9000 \
-  -Dsonar.login=a91334acbc296ae52012d52e66c516cf0e59a828"
+         sh "${mvnHome}/bin/mvn mvn sonar:sonar \
+  -Dsonar.organization=joshimahesh-github \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.login=c82876bf16f67bdfb90f906c4e03c896ba36b2e6"
        
        }
     }
