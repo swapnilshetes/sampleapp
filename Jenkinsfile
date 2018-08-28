@@ -14,7 +14,6 @@ node{
         message: 'Welcome to Jenkins!! Slack notification.',
         teamDomain: 'bitwise-demoworkspace', 
         tokenCredentialId: 'slack-demo'
-
    }
  
 }
